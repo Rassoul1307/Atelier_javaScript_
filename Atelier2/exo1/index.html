@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello word</h1>
+
+
+
+    <script>
+        const array = [5,1,1,1,5]
+        function numAverage(array) {
+            let sum = 0
+            let result = 0
+            for (const valeur of array) {
+                sum += valeur
+            }
+            result = sum/array.length
+            // console.log(`la moyenne du tableau est ${result}`);
+            return result;
+        }
+        numAverage(array);
+        const resultat = numAverage(array)
+        console.log(`la moyenne du tableau est ${resultat}`);
+    </script>
+</body>
+</html>
