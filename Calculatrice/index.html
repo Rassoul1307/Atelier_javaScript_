@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="head">
+        <div class="container-fluid d-flex w-100">
+            <h3 class="text-body-secondary fw-normal">ma-calculatrice.fr</h3>
+            <h3 class="text-body-tertiary ms-auto fw-normal">Des calculettes toutes simples</h3>
+        </div>
+    </div>
+    <nav>
+        <div class="container-fluid ms-0 text-white d-flex" style="background-color: #033f86;">
+            <div class="p-3 border">CALCULATR.</div>
+            <div class="p-3 border">TEMPS</div>
+            <div class="p-3 border">FINAN.</div>
+            <div class="p-3 border">DIV.</div>
+            <div class="p-3 border">CONV.</div>
+            <div class="p-3 border">GEOM.</div>
+            <div class="p-3 border">PLAY</div>
+        </div>
+    </nav>
+    <div class="calculatrice">
+        <div class="allecran">
+            <div id="display" class="ecran"></div>
+            <div class="secondecran"></div>
+        </div>
+        <div class="angry-grid">
+            <button class="bouton" onclick="appendNumber('7')" id="item-0">7</button>
+            <button class="bouton" onclick="appendNumber('8')" id="item-1">8</button>
+            <button class="bouton" onclick="appendNumber('9')" id="item-2">9</button>
+            <button class="bouton" onclick="clearInput()" id="item-3">CE</button>
+            <button class="bouton" onclick="clearDisplay()" id="item-4">C</button>
+            <button class="bouton" onclick="appendNumber('4')" id="item-5">4</button>
+            <button class="bouton" onclick="appendNumber('5')" id="item-6">5</button>
+            <button class="bouton" onclick="appendNumber('6')" id="item-7">6</button>
+            <button class="bouton" onclick="appendOperator('/')" id="item-8">/</button>
+            <button class="bouton" onclick="appendOperator('*')" id="item-9">*</button>
+            <button class="bouton" onclick="appendOperator('-')" id="item-10">-</button>
+            <button class="bouton" onclick="appendOperator('+')" id="item-11">+</button>
+            <button class="bouton" onclick="calculate()" id="item-12">=</button>
+            <button class="bouton" onclick="appendNumber('1')" id="item-13">1</button>
+            <button class="bouton" onclick="appendNumber('2')" id="item-14">2</button>
+            <button class="bouton" onclick="appendNumber('3')" id="item-15">3</button>
+            <button class="bouton" onclick="appendNumber('0')" id="item-16">0</button>
+            <button class="bouton" onclick="appendDecimal()" id="item-17">.</button>
+            <button class="bouton" id="item-18">Separer milliers*</div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="main.js"></script>
+    <!-- Bootstrap 5 CDN Links -->
+    <script src="https://kit.fontawesome.com/3e56bd9026.js" crossorigin="anonymous"></script>
+</body>
+</html>
